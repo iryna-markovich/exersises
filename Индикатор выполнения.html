@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Индикатор выполнения</title>
+	<style type="text/css">
+		#index {
+		    position: relative;
+		    margin: 10%;
+		    width: 250px;
+		    border: 1px solid grey;
+		    box-sizing: border-box;
+		}
+		#index div {
+			display: inline-block;
+			padding: 10px;
+		}
+		#index .progress {
+		    position: absolute;
+		    width: calc(50% - 20px);
+			height: calc(100% - 20px);
+		    background: #dadada;
+		    z-index: -1;
+		}
+		.beginning {float: : left;}
+		.middle {
+			position: absolute; 
+			text-align: center; 
+   			width: calc(100% - 20px);
+			left: 0;
+    		top: 0;
+		}
+		.finish {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div id="index">
+		<div class="progress"></div>
+		<div class="beginning">0</div>
+		<div class="middle">50%</div>
+		<div class="finish">5</div>
+	</div>
+</body>
+</html>

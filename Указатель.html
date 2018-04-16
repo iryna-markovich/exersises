@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Указатель</title>
+	<style type="text/css">
+		body {
+			background: #333333;
+			margin: 15%;
+		}
+		#arrow div {
+			border: 5px solid #c2e1f5;
+			background:  #88b7d5;
+			color: #ffffff;
+			text-align: center;
+			padding: 20px;
+			position: relative;
+		}
+		#arrow div:before {
+		    content: '';
+		    border-bottom: 40px solid #c2e1f5;
+		    border-left: 40px solid transparent;
+		    border-top: 40px solid transparent;
+		    border-right: 40px solid transparent;
+		    position: absolute;
+		    top: -80px;
+		    right: calc(50% - 20px);
+		    z-index: -1;
+		}
+		#arrow div:after {
+			content: '';
+		    border-bottom: 32px solid #88b7d5;
+		    border-left: 32px solid transparent;
+		    border-top: 32px solid transparent;
+		    border-right: 32px solid transparent;
+		    position: absolute;
+		    top: -64px;
+		    right: calc(50% - 12px);
+		    z-index: 1;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="arrow">
+		<div>Много интересного текста</div>
+	</div>
+</body>
+</html>

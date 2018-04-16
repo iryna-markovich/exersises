@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Рамка вокруг текста</title>
+	<style type="text/css">
+		#border_1 {
+			box-shadow: 0px 0px 0 1px #ffffff, 0px 0px 0px 2px #f05258;
+		}
+		#border_2 {
+			position: relative;
+		}
+		#border_2:before {
+		    content: '';
+		    width: 262px;
+		    height: 30px;
+		    position: absolute;
+		    background: #ffffff;
+		    margin: -6px;
+		    z-index: -1;
+		}
+		#border_2:after {
+		    content: '';
+		    width: 264px;
+		    height: 32px;
+		    position: absolute;
+		    background: #f05258;
+		    margin: -7px -143px;
+		    z-index: -2;
+		}
+		#border_3 {
+			border: 3px solid #ffffff;
+			border-style: double;
+		}
+		#border_4 {
+			outline: 1px solid #f05258;
+   	 		outline-offset: 1px;
+		}
+		#border_5 {
+		    background-clip: content-box;
+    		border: 1px solid #f05258;
+		}
+		.border {
+			width: 250px;
+			padding: 5px;
+			background: #f05258;
+			color: #ffffff;
+		}
+	</style>
+
+
+
+</head>
+<body>
+	<p id="border_1" class="border">Lorem Lorem Lorem</p>
+	<p id="border_2" class="border">Lorem Lorem Lorem</p>
+	<p id="border_3" class="border">Lorem Lorem Lorem</p>
+	<p id="border_4" class="border">Lorem Lorem Lorem</p>
+	<p id="border_5" class="border">Lorem Lorem Lorem</p>
+</body>
+</html>

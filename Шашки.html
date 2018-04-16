@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+table {
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+td, th {
+  border: 1px solid #000;
+  position: relative;
+}
+
+td {
+  width: 58px;
+  height: 58px;
+}
+
+td:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #0063ef;
+  position: absolute;
+  top: calc(50% - 20px);
+  right: calc(50% - 20px);
+}
+
+tbody tr:hover {
+  background: #ffe581;
+}
+
+tbody td:hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -500px;
+  height: 1000px;
+  width: 100%;
+  background: #ffe581;
+  z-index: -1;
+}
+
+tbody td:hover:before {
+  background: #000;
+}
+
+tbody td:hover {
+  background: #ffcd00;
+}
+  </style>
+
+</head>
+
+<body>
+    <table>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>

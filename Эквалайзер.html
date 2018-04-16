@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Эквалайзер</title>
+	<style type="text/css">
+		body {
+			background: #333;		
+		}
+		#eqv {
+			display: flex;
+			align-items: flex-end;
+  			flex-direction: row;
+    		justify-content: center;
+		    position: absolute;
+		    bottom: 0;
+		    left: calc(50% - 100px);
+		}
+		#eqv:hover div {
+			height: 115px !important;
+		}
+		#eqv div {
+			margin: 20px 5px;
+			width: 30px;
+			background: repeating-linear-gradient(to bottom, transparent, transparent 20px, #333 20px, #333 23px),
+   			linear-gradient(to bottom, #ffd059, #ff8c00);
+    		border-top-right-radius: 5px;
+    		border-top-left-radius: 5px; 
+   			transition: all .2s ease;
+		}
+		#eqv div:nth-child(1){
+			height: 20px;
+		}
+		#eqv div:nth-child(2){
+			height: 43px;
+		}
+		#eqv div:nth-child(3){
+			height: 89px;
+		}
+		#eqv div:nth-child(4){
+			height: 66px;
+		}
+		#eqv div:nth-child(5){
+			height: 92px;
+		}
+	</style>
+</head>
+<body>
+	<div id="eqv">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>

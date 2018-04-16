@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.box {
+		    margin: 5px 0px;
+		    cursor: pointer;
+		}
+		.box button {
+		    width: 20px;
+		    height: 20px;
+		    display: inline-block;
+		    background: #2196f3;
+		    color: #ffffff;
+		    line-height: 18px;
+		    text-align: center;
+		    border:none;
+		    outline: none;
+  			border-radius: 2px;
+		}
+		.box button:hover {
+			filter: brightness(105%);
+		}
+		.inner-box {
+		display:none;
+		background: ghostwhite;
+		text-align: center;
+		}
+		.inner-box img {
+		max-width: 850px;
+		width: 100%;
+		margin: 20px 0;
+		}
+		.text-main {
+		font-weight: bold;
+		}
+		.text-small-12 {
+		font-size:12px;
+		}
+		.table-row {
+		display:block;
+		width: 100%;
+		max-width: 850px;
+		overflow: hidden;
+		margin: 5px auto;
+		border-bottom: 1px solid #ececec;
+		}
+		.cell-width-50 div{
+		width:50%;
+		}
+		.cell-width-nth {
+		max-width: 100% !important;
+		}
+		.cell-width-nth div:nth-child(1){width:15%;}
+		.cell-width-nth div:nth-child(2){width:20%;}
+		.cell-width-nth div:nth-child(3){width:15%;}
+		.cell-width-nth div:nth-child(4){width:20%;}
+		.cell-width-nth div:nth-child(5){width:15%;}
+		.cell-width-nth div:nth-child(6){width:15%;}
+
+		.table-row div {
+		display:inline-block;
+		float:left;
+		box-sizing: border-box;
+		padding:5px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="box"><button>-</button> по телефону +7 (495) 974-3333;</div>
+	<div id="page_order_all1" class="box"><button id="page_order_btn1">+</button> на странице с описанием товара;</div>
+	<div id="page_order1" class="inner-box">yyyyyyyyyyyyy</div>
+	<div id="page_order_all2" class="box"><button id="page_order_btn2">+</button> на странице с описанием товара;</div>
+	<div id="page_order2" class="inner-box">yyyyyyyyyyyyy</div>
+
+<script type="text/javascript">
+	page_order_all1.onclick = ChangeSign1;
+	function ChangeSign1() {
+		var btn1 = document.getElementById('page_order_btn1');
+			if (btn1.innerHTML == '+') {
+				btn1.innerHTML = '-';
+				btn1.style.background = '#000000';
+				page_order1.style.display = 'block';
+			}
+			else {
+				btn1.innerHTML = '+';
+				btn1.style.background = 'red';
+				page_order1.style.display = 'none';
+			}
+	}
+</script>
+
+
+<!--
+	<script>
+		page_order_btn1.onclick = function() { ChangeSign1(); }
+		function ChangeSign1(){
+			var btnPlus = document.getElementById('page_order_btn1');
+			btnPlus.innerHTML = '-';
+			document.getElementById('page_order_btn1').style.background='#f63b2a';
+		}
+		page_order_btn1.removeEventListener("click", ChangeSign1); 
+	</script>
+-->
+
+
+</body>
+</html>

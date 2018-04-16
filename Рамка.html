@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Рамка</title>
+	<style type="text/css">
+		#border1 {
+			width: 200px;
+			height: 150px;
+			margin: 35px;
+			background: #60b88d;
+			box-shadow: 4px 4px red, 8px 8px grey;
+		}
+		#border2 {
+			position: relative;
+			width: 200px;
+			height: 150px;
+			margin: 35px;
+			background: #60b88d;
+		}
+		#border2:before {
+			content: '';
+			width: 200px;
+			height: 150px;
+			background: red;
+			position: absolute;
+			margin: 4px;
+			z-index: -1;
+		}
+		#border2:after {
+			content: '';
+			width: 200px;
+			height: 150px;
+			background: grey;
+			position: absolute;
+			margin: 8px;
+			z-index: -2;	
+		}
+		#border3{
+			position: absolute;
+			width: 200px;
+			height: 150px;
+    		margin: 43px;
+			background: grey;
+			z-index: 0;
+		}
+		#border3>div {
+			width: 200px;
+			height: 150px;
+			background: red;
+			position: absolute;
+			margin: -4px;
+			z-index: -1;
+		}
+		#border3>div>div  {
+			width: 200px;
+			height: 150px;
+			background: #60b88d;
+			position: absolute;
+			margin: -4px;
+			z-index: -2;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="border1"></div>
+	<div id="border2"></div>
+	<div id="border3">
+		<div>
+			<div></div>
+		</div>
+	</div>
+</body>
+</html>

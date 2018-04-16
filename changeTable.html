@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+#goods_colors, #types_of_sizes_container {
+    display: inline-block;
+}
+#types_of_sizes_btn {
+    display: inline-block;
+	color: #000000;
+    border-bottom: 1px dotted #cccccc;
+	padding: 2px;
+    margin: 0 10px;
+	cursor: pointer;
+	border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+	outline: none;
+}
+
+#types_of_sizes_btn:after {
+	content: '';
+    background: url(/art/icons.png);
+    background-position: 0px -408px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin: 0 5px;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+#types_of_sizes {
+    display: none;
+    width: 100%;
+    position: absolute;
+	margin: 10px 0 0 0;
+    background: #ffffff;
+    box-shadow: 0px 50px 45px -65px #000000;
+	border-bottom: 1px solid #e6e6e6;
+	max-height: 500px;
+    overflow: auto;
+}
+#types_of_sizes>div {
+    display: block;
+	overflow: hidden;
+	border-bottom: 1px solid #e6e6e6;
+	color: #6a6a6a;
+}
+#types_of_sizes>div:hover {
+    background: #d1ecff;
+}
+#types_of_sizes>div:first-child {
+	color: #076ad8 !important;
+    font-weight: bold;
+    background: #ffffff;
+}
+#types_of_sizes>div:last-child {
+	border-bottom: none;
+}
+#types_of_sizes>div>div{ /* 6 колонок шириной по 15% */
+    width: 15%;
+	display: inline-block;
+    float: left;
+	padding: 10px;
+	box-sizing: border-box;
+}
+#types_of_sizes>div>div:last-child { /* 6-я колонка шириной 25% - для большего коммента */
+    width: 25%;
+}
+.blue-text {
+	color: #076ad8 !important;
+}
+.show {
+	display: block !important;
+}
+.rotate {
+    transform: rotate(90deg);
+	}
+</style>
+</head>
+<body>
+
+<div id="types_of_sizes_container"><button id="types_of_sizes_btn">Все типоразмеры</button></div>
+<!-- Таблица Все типоразмеры -->
+<div id="types_of_sizes">
+	<div>
+		<div>Артикул</div>	
+		<div>Серия</div>	
+		<div>Модель</div>
+		<div>Размер</div>
+		<div>Размер</div>
+		<div>Материал</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-68 G</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MG47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Стекло-металл</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+	<div>
+		<div>195030</div>	
+		<div>BUSINESS 2</div>	
+		<div>MP47-610 B</div>
+		<div>600 мм</div>
+		<div>800 мм</div>
+		<div>Металлическая с перфорацией</div>
+	</div>
+</div>
+
+</div>
+
+<style type="text/css">
+.show {
+	display: block !important;
+}	
+</style>
+
+<script>
+types_of_sizes_container.onclick = ShowBox;
+function ShowBox() {
+	types_of_sizes_btn.classList.toggle('blue-text');
+	types_of_sizes.classList.toggle('show');
+	/*
+	if (btnShow.classList.contains('blue-text')) {
+		btnShow.classList.remove('blue-text');
+		types_of_sizes.style.display = 'none';
+	}
+	else {
+		btnShow.classList.add('blue-text');
+		types_of_sizes.style.display = 'block';
+		btnShow.classList.add('blue-text');
+	}*/
+}
+</script>
+
+
+</body>
+</html>

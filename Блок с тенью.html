@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Блок с тенью</title>
+	<style type="text/css">
+		#shadow div {
+			background: #c9e39c;
+			font: 18px/16px Calibri; 
+			padding: 15px; 
+			position: relative;
+			min-height: 100px;
+		}
+
+		#shadow div:first-child {
+			font-weight: bold;
+			box-shadow: none;
+		    display: inline-block;
+		    max-width: 250px;
+		    min-height: auto;
+		}
+
+		#shadow div:after {
+			content: '';
+		    display: block;
+		    position: absolute;
+		    z-index: -1;
+			top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		}
+		#shadow div:after {
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+		}
+	</style>
+</head>
+<body>
+	<div id="shadow">
+		<div>Заголовок</div>
+		<div>Текст</div>
+	</div>
+</body>
+</html>

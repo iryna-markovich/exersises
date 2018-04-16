@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Электронный сомелье</title>
+	<style type="text/css">
+		body {
+			background: repeating-linear-gradient(45deg, #122b29, #122b29 2px, #1b1b1b 4px, #1b1b1b 6px);
+		}
+		#container_form {
+			margin: 1% 10%;
+			overflow: hidden;
+		}
+		#container_form ol {
+			list-style-position: inside;
+			padding: 0;
+		    margin: 0 15px;
+		}
+		#container_form input {
+			margin: 3px 3px 3px 0px;
+		}
+		#container_form ol li {
+		    border-bottom: 1px solid #c3c3c3;
+		    color: #ababab;
+			padding: 2px 0;
+		}
+		#container_form>div {
+			position: relative;
+			display: inline-block;
+			float: left;
+			background: #dadada;
+			margin: 22px;
+			overflow: hidden;
+   			border-radius: 5px;
+   			font-family: Calibri;
+			color: #5a5a5a;
+			font-size: 16px;
+		}
+		#container_form>div>div:first-child {
+		    padding: 10px 15px;
+		}
+		#container_form>div>div:nth-child(2) {
+			margin: 10px 0;
+		    overflow: auto;
+		    height: calc(100% - 46px - 20px);
+		}
+		#container_form>div>div:nth-child(2) div {
+			padding: 2px 15px;
+			border-top: 1px solid transparent;
+    		border-bottom: 1px solid transparent;
+		} 
+		#container_form>div>div:nth-child(2) div:hover {
+			color: #009688;
+    		background: linear-gradient(to right, #f1f1f1, transparent);
+    		border-top: 1px solid #ffffff2e;
+    		border-bottom: 1px solid #ffffff2e;
+    		cursor: pointer;
+		}
+		#container_form>div>div:nth-child(2) span.text-sub {
+			color: #5a5a5a;
+    		line-height: 18px;
+		}
+		#container_form>div>div:nth-child(2) span.text-sub span {
+			font-size: 16px;
+			color: #28bdaf;
+		}
+		#container_form>div>div>span:first-child {
+			font-size: 21px;
+			color: #ffffff;
+		}
+		#container_form .box-2s>div:nth-child(3) {
+    		background: #b7b7b7;
+		    position: absolute;
+		    width: 100%;
+		    bottom: 0;
+		    padding: 5px 15px;
+			box-sizing: border-box;
+		}
+		.text-sub {
+			font-size: 12px;
+			float: right;
+   			line-height: 28px;
+			color: #ffffff;
+		}
+		.box-1 {
+			width: 484px;
+			height: 344px;
+		}
+		.box-2 {
+			width: 220px;
+			height: 344px;
+		}
+		.box-2s {
+			width: 220px;
+			height: 150px;
+		}
+		.box-1>div:first-child {
+			background: #28bdaf;
+		}
+		.box-2>div:first-child {
+			background: #009688;
+		}
+		.box-2s>div:first-child {
+			background: #dc633d;
+		}
+		.checked {
+			color: #009688;
+		}
+		.add-item {
+			color: #dc633d;
+		}
+		.graduation {
+		    display: flex;
+		    justify-content: space-evenly;
+		    border-bottom: 4px solid #c3c3c3;
+		    margin: 0 10px !important;
+		}
+		.rainbow:before {
+			content: "";
+		    display: block;
+   			background: linear-gradient(to right, #4CAF50, #CDDC39, #FFEB3B, #F44336);
+		    position: absolute;
+		    width: calc(100% - 20px);
+		    height: 4px;
+		    top: 85px;
+		}
+		.graduation li {
+		    display: inline-block;
+		    float: left;
+		    border-bottom: none !important;
+		    color: #5a5a5a !important;
+		    font-size: 12px;
+			padding: 20px 4px 0 !important;
+			border-right: 1px solid transparent;
+    		border-left: 1px solid transparent;
+		}
+		.graduation li:after {
+			content: "";
+		    display: block;
+		    width: 2px;
+		    height: 5px;
+		    background: #c3c3c3;
+		    margin: 0 auto;
+		    font-size: 12px;
+		}
+		.graduation li:hover {
+			color: #009688 !important;
+    		background: linear-gradient(to bottom, #f1f1f1, transparent);
+    		border-right: 1px solid #ffffff2e;
+    		border-left: 1px solid #ffffff2e;
+    		cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="container_form">
+		<div class="box-2">
+			<div>
+				<span>Lorem</span>
+				<span class="text-sub">14 lorem</span>
+			</div>
+			<div>
+				
+			</div>
+		</div>
+		<div class="box-2">
+			<div>
+				<span>Lorem</span>
+				<span class="text-sub">14 lorem</span>
+			</div>
+			<div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+			</div>
+		</div>
+		<div class="box-2">
+			<div>
+				<span>Lorem</span>
+				<span class="text-sub">14 lorem</span>
+			</div>
+			<div>
+				<div>
+					<span>Lorem</span>
+					<span class="text-sub">14 lorem</span>
+				</div>
+							<div>
+					<span>Lorem</span>
+					<span class="text-sub">14 lorem</span>
+				</div>
+							<div>
+					<span>Lorem</span>
+					<span class="text-sub">14 lorem</span>
+				</div>
+							<div>
+					<span>Lorem</span>
+					<span class="text-sub">14 lorem</span>
+				</div>
+			</div>
+		</div>
+		<div class="box-2">
+			<div>
+				<span>Lorem</span>
+				<span class="text-sub">14 lorem</span>
+			</div>
+			<div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+			</div>
+		</div>
+		<div class="box-1">
+			<div>
+				<span>Lorem</span>
+			</div>
+			<div>
+				<ol>
+					<li><span class="checked">Lorem Lorem</span> 
+						<span class="text-sub"> 
+							<span>8</span>
+							Lorem
+						</span>
+					<li><span class="checked">Lorem Lorem</span>  
+						<span class="text-sub"> 
+							<span>8</span>
+							Lorem
+						</span>
+					<li><span class="checked">Lorem Lorem</span> 
+						<span class="text-sub"> 
+							<span>8</span>
+							Lorem
+						</span>
+					<li><span class="add-item">Lorem</span> 
+						<span class="text-sub"> 
+							<span>8</span>
+							Lorem
+						</span>
+				</ol>
+			</div>
+		</div>
+		<div class="box-2s">
+			<div>
+				<span>Lorem</span>
+			</div>
+			<ol class="graduation">
+					<li>0</li>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+			</ol>
+			<div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+			</div>
+		</div>
+		<div class="box-2s">
+			<div>
+				<span>Lorem</span>
+				<span class="text-sub">14 lorem</span>
+			</div>
+			<ol class="graduation">
+					<li>0</li>
+					<li>10</li>
+					<li>15</li>
+					<li>20</li>
+					<li>30</li>
+					<li>45</li>
+					<li>60</li>
+					<li>90</li>
+					<li>120</li>
+			</ol>
+			<div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+			</div>
+		</div>
+		<div class="box-2s">
+			<div>
+				<span>Lorem</span>
+			</div>
+			<ol class="graduation rainbow">
+					<li>0</li>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+			</ol>
+			<div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+			</div>
+		</div>
+		<div class="box-2s">
+			<div>
+				<span>Lorem</span>
+				<span class="text-sub">14 lorem</span>
+			</div>
+			<div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+				<div><span>Lorem</span></div>
+			</div>
+		</div>
+		<div class="box-2">
+			<div>
+				<span>Lorem</span>
+				<span class="text-sub">14 lorem</span>
+			</div>
+			<div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+			</div>
+		</div>
+		<div class="box-2">
+			<div>
+				<span>Lorem</span>
+				<span class="text-sub">14 lorem</span>
+			</div>
+			<div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+				<div><input type="checkbox" name=""><span>Lorem</span></div>
+			</div>
+		</div>
+		<div class="box-1">
+			<div>
+				<span>Lorem</span>
+			</div>
+			<div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>

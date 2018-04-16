@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ниспадающее меню</title>
+	<style type="text/css">
+		#nav {
+			display: block;
+			list-style: none;
+   			cursor: pointer;
+		}
+		#nav>li {
+			padding: 5px 10px;
+    		display: inline-block;
+			position: relative;
+   			transition: all .1s ease;
+		}
+		#nav li ul {
+			display: none;
+			position: absolute;
+			list-style: none;
+			padding: 0;
+		    margin: 6px -14px;
+		    box-shadow: none;
+		}
+		#nav li ul li, #nav li a {
+		   	color: #2196F3;
+		   }
+		#nav li:hover a {
+			color: #000000;
+			text-decoration: none;
+		}
+		#nav li ul li {
+			padding: 5px 10px;
+   			transition: all .1s ease;
+			margin: 0 2px;
+		}
+		#nav li ul li:hover {
+			background: #2196F3;
+			color: #ffffff;
+		}
+		#nav li:hover ul {
+			display: block;
+		}
+/* #nav li ul:after, #nav li:after*/
+		#nav li ul:after {
+			content: '';
+		    display: block;
+		    position: absolute;
+		    z-index: -1;
+			top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    border-radius: 3px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+		}
+		#nav>li:hover :after {}
+
+	</style>
+</head>
+<body>
+	<ul id="nav">
+		<li><a href="">File</a>
+			<ul>
+				<li>11111</li>
+				<li>22222</li>
+				<li>33333</li>
+			</ul>
+		</li>
+		<li><a href="">Edit</a>
+			<ul>
+				<li>44444</li>
+				<li>55555</li>
+				<li>66666</li>
+			</ul>
+		</li>
+		<li><a href="">Selection</a></li>
+		<li><a href="">Find</a></li>
+	</ul>
+</body>
+</html>

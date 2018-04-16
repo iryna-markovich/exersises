@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gradient</title>
+	<style type="text/css">
+		#gradient {
+			display: block;
+			margin: 20px;
+			border: 3px solid rgba(0, 0, 0, .1);
+			border-radius: 10px;
+			background: linear-gradient(to bottom, rgba(97, 204, 180, .5), rgba(92, 165, 149, .5));
+			padding: 20px;
+			font: 14px/14px Calibri;
+		}
+		#gradient>div {
+			border: 1px solid grey;
+			background: #edecde;
+			border-radius: 10px;
+			overflow: hidden;
+			min-height: 100px;
+		}
+		#gradient>div>div {
+			display: block;
+			padding: 12px;
+		}
+		#gradient div div:first-child {
+			background: linear-gradient(to bottom, #ffd800, #ffba00);
+			font-size: 18px;
+		}
+		#gradient div div:first-child:before {
+		    content: '';
+		    border-left: 10px solid transparent;
+		    border-right: 10px solid transparent;
+		    border-bottom: 10px solid transparent;
+		    border-top: 10px solid #ffba00;
+		    position: absolute;
+		    margin: 25px 0 0 0px;
+		}
+					
+	</style>
+</head>
+<body>
+	<div id="gradient">
+		<div>
+			<div>Заголовок</div>
+			<div>Текст</div>
+		</div>
+	</div>
+</body>
+</html>
